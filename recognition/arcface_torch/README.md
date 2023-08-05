@@ -224,4 +224,4 @@ More details see
 
 Changes: ``C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py`` in line 675: `` map_location: MAP_LOCATION = torch.device('cpu')``
 
-Inference: ``python inference.py --weight "C:\Users\hp\Desktop\Github\arcface\recognition\arcface_torch\OneDrive-2023-08-04\ms1mv3_arcface_r50_fp16\rank_7_softmax_weight_mom.pt"  --img "C:\Users\hp\Downloads\twitter.jpg" ``
+Inference: ``python inference.py --weight python inference.py --weight "C:\Users\hp\Desktop\Github\arcface\recognition\arcface_torch\OneDrive-2023-08-04\ms1mv3_arcface_r50_fp16\backbone.pth" --img "C:\Users\hp\Downloads\twitter.jpg" ``
