@@ -14,8 +14,9 @@ To avail the latest features of PyTorch, we have upgraded to version 1.12.0.
 - Install [PyTorch](https://pytorch.org/get-started/previous-versions/) (torch>=1.12.0).
 - (Optional) Install [DALI](https://docs.nvidia.com/deeplearning/dali/user-guide/docs/), our doc for [install_dali.md](docs/install_dali.md).
 - `pip install -r requirement.txt`.
-  
-## How to Training
+
+
+## How to Train
 
 To train a model, execute the `train_v2.py` script with the path to the configuration files. The sample commands provided below demonstrate the process of conducting distributed training.
 
@@ -216,3 +217,11 @@ More details see
   year={2021}
 }
 ```
+
+--------------------------------------
+
+## Inference on Local CPU
+
+Changes: ``C:\Users\hp\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\serialization.py`` in line 675: `` map_location: MAP_LOCATION = torch.device('cpu')``
+
+Inference: ``python inference.py --weight "C:\Users\hp\Desktop\Github\arcface\recognition\arcface_torch\OneDrive-2023-08-04\ms1mv3_arcface_r50_fp16\rank_7_softmax_weight_mom.pt"  --img "C:\Users\hp\Downloads\twitter.jpg" ``
